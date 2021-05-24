@@ -1,0 +1,133 @@
+// base color
+$blue:#324157;
+$light-blue:#3A71A8;
+$red:#C03639;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow:#FEC171;
+$panGreen: #30B08F;
+
+//navbar
+//$navbarBg: #80b4ed; // 导航栏背景色
+$navbarBg: rgba($color: #000000, $alpha: 0.5);
+$navbarBorder: #fff; // 导航栏边框色
+$elTagBg: #b7f4ec; // 退出按钮背景色
+$elTagBorder: #fff; // 退出按钮边框色
+$elTagColor: #fff; // 退出按钮文字色
+
+//sidebar
+$menuBg:rgb(49,53,56); // 菜单背景色
+$subMenuBg:rgba(0,0,0,0.5); // 子菜单背景色
+$menuItemHover:rgba(0,0,0,.5); // 菜单项覆盖颜色
+$menuItemActive:rgba(0,0,0,.5);// 菜单项激活颜色
+$submenuItemHover:rgba(0,0,0,.5); // 从菜单覆盖颜色
+$submenuItemActive:rgba(0,0,0,.5); // 从菜单覆盖颜色
+$fontColor:#fff;// 文字颜色
+$fontHover:#49bfae; // 文字覆盖颜色
+$fontActive:#49bfae; // 文字覆盖颜色
+$menuHover:rgba(0,0,0,0.5); // 菜单覆盖颜色
+$menuActive:rgba(0,0,0,0.5);// 菜单激活颜色
+
+// tagview
+$tagviewBg: #FFFFFF; // 标签头背景色
+$tagviewBorder: #FFFFFF; // 标签头下边框色
+$tagviewItemBg: #FFFFFF; // 标签元素背景色
+$tagviewItemBorder: #CCCCCC; // 标签元素边框色
+$tagviewItemColor: #686868; // 标签元素文字颜色
+// tagview:active
+$tagviewActiveBg:#59b2a5; // 标签元素激活背景色
+$tagviewActiveColor: #FFFFFF; // 标签元素激活文字颜色
+$tagviewActiveBorder: #59b2a5; // 标签元素边框色
+$tagviewActiveBefore: #FFFFFF; // 标签元素激活前小圆点色
+// tagview context
+$tagviewContextBg: #FFFFFF; // 标签右键背景色
+$tagviewContextColor: #444444; // 标签右键文字颜色
+$tagviewContextBoxShadow: rgba(0, 0, 0, .2); // 标签右键阴影色
+$tagviewContextHoverBg: #7ecef4; // 标签右键覆盖背景色
+// tagview close
+$tagviewCloseHoverBg: #c7e4ff; // 标签关闭按钮覆盖背景色
+$tagviewCloseHoverColor: #FFFFFF; // 标签关闭按钮覆盖文字色
+
+// system choose
+$systemChooseColor: white; // 系统选择模块图标颜色
+
+$oddCellBg: rgb(180, 35, 168); // 单数单元格背景色
+$pulralBg: #c02626;// 复数单元格背景色
+
+// table  // transparent 透明   liushuai
+$tableRowSripedColor:#F6FDFC; //数据表格斑马线背景颜色
+$tableRowHoverColor:#E9F9F7; //数据表格hover背景颜色
+$tableRowCurrentColor:#d7f3ef; //数据表格钻选中背景颜色
+
+//filter-container 搜索栏按钮背景颜色 liushuai
+$filterButtonBgc:#59b2a5;//背景色
+$filterButtonBrc:#59b2a5;//边框色
+$filterButtonFontc:#FFFFFF;//字体色
+
+
+$filterButtonHoverBgc:#59b2a5;//hover背景色
+$filterButtonHoverBrc:#59b2a5;//hover边框色
+$filterButtonHoverFontc:#FFFFFF;//hover字体色
+
+// 复选框的样式 liushuai
+$checkboxChecked:#1caf9a; // 复选框选中颜色
+
+// 分页 liushuai
+$paginationPrevNextBgc:#E9F9F7;
+$paginationLiBgc:#E9F9F7;
+$paginationLiActiveBgc:#1caf9a;
+
+
+// 取消和确认按键的统一样式（需要给标签添加样式 cancel/confirm ） liushuai
+$cancelBtnBgc: #FFFFFF; //取消按键背景色
+$cancelBtnBrc:#1caf9a; //边框色
+$cancelBtnFontColor: #1caf9a; // 字体颜色
+$cancelBtnHoverBgc: white; //背景色 hover
+$cancelBtnHoverBrc: #1caf9a; //边框色 hover
+$cancelBtnHoverFontColor: #1caf9a; // 字体颜色 hover
+
+$confirmBtnBgc: #1caf9a; //确认按键 背景色
+$confirmBtnBrc:#1caf9a; //边框色
+$confirmBtnFontColor: #FFFFFF; // 字体颜色
+$confirmBtnHoverBgc: #1caf9a; //背景色 hover
+$confirmBtnHoverBrc: #1caf9a; //边框色 hover
+$confirmBtnHoverFontColor: #FFFFFF; // 字体颜色 hover
+
+// sidebar
+$menuText:#fff;
+$menuActiveText:#409EFF;
+$subMenuActiveText:#f4f4f5; // https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:#304156;
+$menuHover:#263445;
+
+$subMenuBg:#1f2d3d;
+$subMenuHover:#001528;
+
+$menuBgSite:#0A3951;
+$menuActiveTextSite:#1caf9a;
+
+// $subMenuBg:#1f2d3d;
+// $subMenuHover:#001528;
+
+$sideBarWidth: 260px;
+$tagsViewHeight: 40px;
+$topBarHeight: 6rem;
+
+$tabColor: #1caf9a;
+$tabBg: #FFFFFF;
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  menuBgSite: $menuBgSite;
+  menuActiveTextSite: $menuActiveTextSite;
+  sideBarWidth: $sideBarWidth;
+}

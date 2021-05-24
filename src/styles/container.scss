@@ -1,0 +1,109 @@
+body, html, .el-container {
+  width: 100%;
+  height: 100%;
+  background:#fff;
+  ::-webkit-scrollbar {
+    /*滚动条整体部分，其中的属性有width,height,background,border（就和一个块级元素一样）等。*/
+    width: 3px;
+  }
+  ::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 1px;
+  }
+  ::-webkit-scrollbar-button {
+    /*滚动条两端的按钮。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。*/
+    display: none;
+  }
+  ::-webkit-scrollbar-track {
+    /*外层轨道。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。*/
+    display: none;
+  }
+  ::-webkit-scrollbar-track-piece {
+    /*内层轨道，滚动条中间部分（除去）。*/
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    /*滚动条里面可以拖动的那部分*/
+    background: #ccc;
+  }
+}
+
+/** breadcrumb */
+::v-deep .el-header {
+  height: 4.61% !important;
+}
+
+.breadcrumb {
+  border-bottom: 1px solid rgba(228, 228, 228, 1);
+  padding-top: 0.9%;
+
+  ::v-deep .el-breadcrumb {
+    padding-left: 0.42%;
+    border-left: 5px solid rgba(75, 141, 254, 1);
+  }
+}
+/** breadcrumb */
+
+/** main */
+.query_form {
+  width: 100%;
+  padding-top: 1.5%;
+  border: 1px solid rgba(220, 223, 229, 1);
+
+  .el-row {
+    padding-left: 2%;
+  }
+}
+
+.query_form_btn{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+::v-deep .el-button {
+  border-radius: 8px;
+}
+
+::v-deep .el-button--primary {
+  background: linear-gradient(90deg, rgba(17,153,208,1) 0%, rgba(22,215,171,1) 100%);
+}
+
+::v-deep .el-button--default {
+  background:rgba(70, 76, 91, 1);
+  color:#fff;
+}
+
+::v-deep .el-table {
+  line-height: 30px;
+}
+
+.table {
+  width: 100%;
+  ::v-deep .el-button, .el-button--default, .el-button--medium {
+    padding: 0;
+    font-size: 14px;
+  }
+}
+
+::v-deep .el-table-column{
+ width: 16.6%;
+}
+
+::v-deep .el-dialog__body {
+  padding-left: 9%;
+}
+/** main */
+
+/** page */
+.page {
+  width: 100%;
+  padding-top: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/** page */
